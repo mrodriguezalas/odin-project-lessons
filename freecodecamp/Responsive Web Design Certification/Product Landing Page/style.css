@@ -1,0 +1,18 @@
+body{
+    background-color: #181a1b;
+}
+.header{
+    text-align: center;
+    background: url(https://i.pinimg.com/736x/af/75/2a/af752ac1dfb5ff938b2956988e095c1c.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #f2a830;    
+    font-size: xx-large;
+    width: 100%;
+    height: 90vh;
+}
+.header #marca{
+    position: relative;
+    top: 100px;
+    right: 25%;
+}
