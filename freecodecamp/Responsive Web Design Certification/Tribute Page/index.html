@@ -7,7 +7,16 @@
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
     <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="http://www.jsdelivr.com/#!particles.js"></script>
+    <script>
+        particleJS.load('particles-js', 'particles.json', function(){
+            console.log('particles.json loaded...')
+        })
+    </script>
+
     <audio id="lofi" src="lofi.mp3"></audio>
+    <div id="particles-js"></div>
     <div id="main">
         <h1 id="title">Dr. Carl Sagan</h1>
         <div id="img-div" style="justify-content: center;">
