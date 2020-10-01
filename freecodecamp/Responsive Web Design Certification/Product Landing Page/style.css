@@ -1,13 +1,19 @@
+@font-face{
+    font-family: 'future-now';
+    src: url(Resources/future-now/Future\ Now.ttf);
+}
 body{
     background-color: #181a1b;
 }
 .header{
     text-align: center;
+    background-attachment: fixed;
     background: url(reactor.jpg);
     background-repeat: no-repeat;
     background-position: center;           
     width: 100%;
-    height: 90vh;
+    height: 500px;
+    
 }
 .header #marca{
     position: relative;
@@ -16,5 +22,29 @@ body{
 }
 #description{
     color: #f2a830; 
+    font-size: 100px;
+    font-family: 'future-now';
+    letter-spacing: 8px;
+}
+.content p{
+    color: white;
     font-size: xx-large;
+    text-align: left; 
+    margin: auto;   
+    text-align: center;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#base{
+    background: url(base.jpg); 
+    background-repeat: no-repeat; 
+    height: 500px;
+}
+#starter{
+    background: url(starter.jpg); 
+    background-repeat: no-repeat; 
+    height: 500px;
 }
