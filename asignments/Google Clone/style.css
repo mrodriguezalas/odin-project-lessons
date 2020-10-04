@@ -1,0 +1,35 @@
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#buttons{
+    flex-direction: row;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: #5f6368;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
+}
+#footer{
+    display: grid;
+    grid-template-rows: auto auto;
+    position: fixed;
+    bottom: 0;
+}
