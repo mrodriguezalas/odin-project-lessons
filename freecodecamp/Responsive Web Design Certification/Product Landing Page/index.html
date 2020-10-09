@@ -2,13 +2,19 @@
 <title>Product Page</title>
 <link rel="stylesheet" href="style.css">
 <body>
-    <ul id="navbar">
-        <li><a href="#">The X34 Reactor</a></li>
-        <li><a href="#">Performance</a></li>
-        <li><a href="#">Buy Now</a></li>
-    </ul>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="header">
+    <nav id="nav-bar">
+        <ul id="navbar">
+            <li><img id="header-img" width="100px" src="https://steemitimages.com/0x0/https://img00.deviantart.net/45c9/i/2012/347/1/c/iron_man__arc_reactor_by_whitekidz-d5nx750.png"></li>
+            <li><a class="nav-link" href="index.html#description">The X34 Reactor</a></li>
+            <li><a class="nav-link" href="index.html#performance">Performance</a></li>
+            <li><a class="nav-link" href="index.html#buy">Buy Now</a></li>
+        </ul>
+    </nav>
+    </div>
     <br>
-    <div class="header">
+    <div class="content">
         
     </div>
     <div id="description">
@@ -17,7 +23,7 @@
             <p>Taking fusion to new heights.</p>
     </div>
     
-    <div class="content grid-container">
+    <div class="features grid-container">
         <div id="base"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna augue. Curabitur nec varius sapien. Ut eu sagittis mauris. Vestibulum fringilla auctor sem, sit amet maximus nulla tincidunt id. Cras ullamcorper laoreet orci ac tincidunt. Nulla ac commodo neque, nec accumsan augue. Aliquam sit amet porttitor est. Quisque a ligula posuere, laoreet ex facilisis, mollis arcu.</p>
         <p>Ut viverra nibh sed felis vehicula egestas. Quisque pellentesque turpis at dolor sodales, vel maximus nunc maximus. </p>
@@ -29,5 +35,23 @@
         <div id="starter"></div>
         <p>Mauris in augue id odio molestie porttitor a id nunc. Suspendisse lorem metus, pretium eget felis non, consequat accumsan nulla. Fusce vel volutpat ipsum. Morbi faucibus egestas pharetra. Nam malesuada lacinia mauris nec dignissim. Aliquam viverra vestibulum est in gravida. Cras auctor tincidunt pellentesque.</p>
     </div>
+
+    <div id="performance">
+
+    </div>
+    <div id="buy"></div>
+
+    <div id="video">
+        <video width="320" height="240">
+            <iframe width="420" height="315" src="https://youtu.be/gPpYQFtyO98">
+            </iframe>
+        </video>
+    </div>
+    <br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" value="email" placeholder="Your email">
+        <input type="submit" id="submit">
+    </form>
+    
 </body>
 </html>
