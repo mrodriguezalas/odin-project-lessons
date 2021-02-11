@@ -1,10 +1,18 @@
+body{
+    background-color: rgb(61, 61, 121);
+}
 #form-div {
     display: flex;
     margin-left: 25%;
     margin-right: 25%;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: rgb(190, 195, 195);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 3px 5px 3px #050505;
+    border-radius: 15px;
+    height: 70vh;
 }
 
 .col-25{
@@ -25,6 +33,13 @@
   clear: both;
 }
 
+input, textarea{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 5px 8px #888888;
+}
+
+
 @media only screen and (max-width: 600px) {    
 
     .col-25, .col-75, input[type=submit] {
@@ -32,3 +47,18 @@
         margin-top: 0;
       }
   }
+
+  #form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 195, 195);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 3px 5px 3px #050505;
+    border-radius: 15px;
+    height: 30vh;
+    width: 100%;
+    font-size: larger;
+}
+

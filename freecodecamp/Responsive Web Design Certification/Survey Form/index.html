@@ -2,13 +2,17 @@
 <head>
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js">    
+    </script>
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <h1 id="title">Help us improve!</h1>
-    <p id="description">Fill out this form and tell us your thoughts and impressions.
-        <br> We are always eager to hear your opinion.</p>
+    
     <div id="form-div">
+        
         <form id="survey-form">
             <div class="row">
                 <div class="col-25">
@@ -50,34 +54,14 @@
                         <option value="option4">Option 4</option>
                     </select>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label id="gender-label" for="gender">Select your gender:</label>                               
-                </div>
-                <div class="col-75">
-                    <label id="male-label" for="male">Male</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label id="female-label" for="female">Female</label>
-                    <input type="radio" id="female" name="gender" value="female"><br> 
-                </div>
-            </div>                   
+            </div>                             
               
-            <p>Select what you are interested in:</p>
-            
-            <input type="checkbox" id="check1" name="electronics" value="electronics">
-            <label id="check1-label" for="electronics">Electronics</label><br>
-            
-            <input type="checkbox" id="check2" name="software" value="software">
-            <label id="check2-label" for="software">Software</label><br>
-            
-            <input type="checkbox" id="check3" name="aerospace" value="aerospace">
-            <label id="check3-label" for="aerospace">Aerospace</label><br>   
+              
             
             <p>Let us know any additional comments:</p>
             <textarea id="text-area" name="text-area" rows="4" cols="50"></textarea><br>
 
-            <button id="submit">Submit</button>
+            <button id="submit" onclick="sendEmail()">Submit</button>
         </form>
     </div>
 </body>
